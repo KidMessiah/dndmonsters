@@ -1,0 +1,149 @@
+{
+	"_meta": {
+		"json": "FeyRiCombatants",
+		"abbreviation": "FRC",
+		"full": "Fey'Ri Combatants",
+		"url": "",
+		"authors": [
+			"KidMessiah"
+		],
+		"convertedBy": []
+	},
+	"monster": [
+		{
+			"name": "Fey'Ri Grunt",
+			"size": "M",
+			"type": "humanoid",
+			"source": "FeyRiCombatants",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "13d8",
+				"average": 58
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90,
+				"canHover": false
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 10,
+			"int": 12,
+			"wis": 11,
+			"cha": 17,
+			"passive": 16,
+			"cr": "4",
+			"save": {
+				"str": "+5",
+				"cha": "+6"
+			},
+			"skill": {
+				"acrobatics": "+3",
+				"athletics": "+4",
+				"deception": "+5",
+				"perception": "+5"
+			},
+			"resist": [
+				{
+					"resist": [
+						"cold"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical attacks"
+				}
+			],
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"senses": "darkvision (60ft)",
+			"senseTags": [
+				"D"
+			],
+			"languages": "Common, Abyssal, Elvish, Sylvan",
+			"languageTags": [
+				"C",
+				"AB",
+				"E",
+				"S"
+			],
+			"environment": [
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Fey'Ri spellcasting ability is Charisma (spell save DC 15, {@hit 6} to hit with spell attacks). The Fey'Ri can innately cast the following spells, requiring only verbal components."
+					],
+					"will": [
+						"{@spell cause fear|xge}",
+						"{@spell eldritch blast}",
+						"{@spell magic missile}"
+					],
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Weapon Master",
+					"entries": [
+						"Fey'Ri are proficient with all simple weapons."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Fey'Ri Scout can make 2 attacks with whichever weapon it has drawn."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft, one target. {@h}11 ({@damage 1d6 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}11 ({@damage 1d8 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Beguiling Apperance (3/day)",
+					"entries": [
+						"The Fey'Ri physically manipulates its own appearance to seem less harmful. Its horns retract, its teeth become dull, its wings disappear and its skin fades to match that of a human."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			]
+		}
+	]
+}
