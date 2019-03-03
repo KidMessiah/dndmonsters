@@ -1,14 +1,4 @@
 {
-	"_meta": {
-		"json": "FeyRiCombatants",
-		"abbreviation": "FRC",
-		"full": "Fey'Ri Combatants",
-		"url": "",
-		"authors": [
-			"KidMessiah"
-		],
-		"convertedBy": []
-	},
 	"monster": [
 		{
 			"name": "Fey'Ri Grunt",
