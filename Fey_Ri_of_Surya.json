@@ -1,0 +1,172 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FeyRiofSurya",
+				"abbreviation": "FoS",
+				"full": "Fey'Ri of Surya",
+				"url": "https://github.com/KidMessiah/dndmonsters",
+				"authors": [
+					"KidMessiah"
+				],
+				"convertedBy": [
+					"KidMessiah"
+				]
+			}
+		]
+	},
+	"dateAdded": 1574166556,
+	"monster": [
+		{
+			"name": "Fey'Ri Grunt",
+			"shortName": "Grunt",
+			"source": "FeyRiofSurya",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8",
+				"average": 58
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90,
+				"canHover": false
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 10,
+			"int": 12,
+			"wis": 11,
+			"cha": 18,
+			"save": {
+				"str": "+5",
+				"wis": "+2",
+				"cha": "+6"
+			},
+			"skill": {
+				"acrobatics": "+4",
+				"athletics": "+5",
+				"deception": "+6",
+				"perception": "+2",
+				"persuasion": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"cold"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Abyssal",
+				"Elvish",
+				"Sylvan"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast|PHB}"
+							]
+						}
+					},
+					"daily": {
+						"2e": [
+							"{@spell darkness|PHB}",
+							"{@spell invisibility|PHB}"
+						]
+					},
+					"will": [
+						"{@spell disguise self|PHB}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Fey'Ri Grunt makes two attacks with it's shortsword."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Eldritch Blast",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) force damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp"
+			],
+			"tokenUrl": "https://lh3.googleusercontent.com/T0kTVU8nS8r3WhMxX02axZsniBvss8qvv1DAHloXnZ-nqnjybOt5iTRDjRh0QLEFpYiVEAu49omXof4fMkEPwGZHI8bzcg9Z4YaGn7UyGwQGzKZZjsFuHB_7rIXSN4F4qsSaiNV4hZCB3cMBSWGhdr2wGZoCKz8LRULDYjVx5YaXUWwBP8Sq8M_vgM45N0SaIMRHBi5yPt9sEW7u9wZs8cH120XTN8-s7875XyjnF_12U5GUQHNE2P8JfzEq6zKFShMeJrjvawRAgQYOrEAOnjLIwlREyuKZwfof4eARhL7UUfw2vtRigWhbH4Fv9pnUkELcXnNSittM-PbJrOuk37XgNbDRJjciutEigHO9g4AcIQPT-dVlpnhn9_3WkqgXIiUeIWnWqo0da7tbLYZkvfQnbGf9Sc4GwNiV_GoerG4cH6n83GOGa5dUfcn9VCsWksluJnRG7WLF1rqbWSDeRmyl8c2yx8SMlKNCU074JEeItZwdRAhvn7c_Xw8r908It5a7_YgdZsBCcpaTWvg4bO9CNOF_Ac5ntzn-mPV8cOmCP5k7lWXHxuTksbLbgJvcTGqPoSpvBAUCWjOkOt4UJmXawXrqmF-XsCURd6wYf4ztWavtS1G7joi3rifCpAoBQQDVZpBrBNUC1LNw6FwJ_Kb9m-9dxF_Ny_Pk8xk-BvfLeHc4r8b6XA=s280-no",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"AB",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"S",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		}
+	]
+}
