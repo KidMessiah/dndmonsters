@@ -15,7 +15,7 @@
 			}
 		]
 	},
-	"dateAdded": 1574166556,
+	"dateAdded": 1574187031,
 	"monster": [
 		{
 			"name": "Fey'Ri Grunt",
@@ -166,6 +166,186 @@
 			"miscTags": [
 				"MW",
 				"RW"
+			]
+		},
+		{
+			"name": "Fey'Ri Scout",
+			"shortName": "Scout",
+			"source": "FeyRiofSurya",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 70",
+				"average": 133
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90,
+				"canHover": false
+			},
+			"str": 18,
+			"dex": 17,
+			"con": 20,
+			"int": 15,
+			"wis": 20,
+			"cha": 24,
+			"save": {
+				"str": "+8",
+				"con": "+9",
+				"wis": "+9",
+				"cha": "+11"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"athletics": "+8",
+				"deception": "+11",
+				"intimidation": "+11",
+				"persuasion": "+11"
+			},
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"cold"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Abyssal",
+				"Elvish",
+				"Sylvan"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Fey'Ri spellcasting ability is Charisma (spell save {@dc 19}, +11 to hit with spell attacks). The Fey'Ri can innately cast the following spells, requiring only verbal components."
+					],
+					"daily": {
+						"3e": [
+							"{@spell aganazzar's scorcher|XGE}",
+							"{@spell hold person|PHB}",
+							"{@spell summon lesser demons|XGE}"
+						],
+						"1e": [
+							"{@spell enervation|XGE}",
+							"{@spell find greater steed|XGE}",
+							"{@spell spirit guardians|PHB}"
+						]
+					},
+					"will": [
+						"{@spell cause fear|XGE}",
+						"{@spell disguise self|PHB}",
+						"{@spell eldritch blast|PHB}",
+						"{@spell plane shift|PHB}"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Enhanced Concenctration",
+					"headerEntries": [
+						"The Fey'Ri Scout can concentrate on two spells at once. When making concentration saves, both spells are dropped if the caster fails. If the Fey'Ri casts a 3rd concentration spell, the first spell cast is dispelled."
+					],
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Fey'Ri Scout makes two attacks with it's shortsword."
+					]
+				},
+				{
+					"name": "Eldritch Blast",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 120/120 ft., one target. {@h}10 ({@damage 1d10 + 7}) force damage."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d6 + 9}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Desperate Escape",
+					"entries": [
+						"As a reaction to taking damage, the Fey'Ri Scout spreads its wing and viciously flaps them, creating gusts of wind in a cone in front of it. Each creature in a 20 foot cone must make a {@dc 15} Dexterity saving throw or be thrown back to the edge of the cone."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://bit.ly/335pikF"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://bit.ly/335pikF",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"AB",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"O",
+				"S"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
 			]
 		}
 	]
