@@ -13,9 +13,10 @@
 					"KidMessiah"
 				]
 			}
-		]
+		],
+		"dateAdded": 1606017433,
+		"dateLastModified": 1606017433
 	},
-	"dateAdded": 1574187031,
 	"monster": [
 		{
 			"name": "Fey'Ri Grunt",
@@ -154,14 +155,14 @@
 				"Multiattack"
 			],
 			"languageTags": [
-				"C",
 				"AB",
+				"C",
 				"E",
 				"S"
 			],
 			"damageTags": [
-				"S",
-				"O"
+				"O",
+				"S"
 			],
 			"miscTags": [
 				"MW",
@@ -334,8 +335,8 @@
 				"Multiattack"
 			],
 			"languageTags": [
-				"C",
 				"AB",
+				"C",
 				"E",
 				"S"
 			],
@@ -344,8 +345,234 @@
 				"S"
 			],
 			"miscTags": [
-				"RW",
-				"MW"
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Multa Luscus",
+			"isNamedCreature": true,
+			"source": "FeyRiofSurya",
+			"page": 125,
+			"size": "H",
+			"type": "fiend",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "750"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 18,
+			"int": 12,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"str": "+12",
+				"con": "+10",
+				"dex": "+9",
+				"wis": "+3",
+				"int": "+3",
+				"cha": "+3"
+			},
+			"skill": {
+				"intimidation": "+6",
+				"athletics": "+12"
+			},
+			"senses": [
+				"darkvision 120ft"
+			],
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"cold"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-silvered weapons"
+				}
+			],
+			"immune": [
+				"fire",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Infernal",
+				"Draconic"
+			],
+			"cr": "20",
+			"trait": [
+				{
+					"name": "Restrained Beholder Antimagic Cone",
+					"entries": [
+						"The Multa Luscus carries a {@condition restrained} Beholder named Bethanie hanging from a chain. The Beholder's central eye creates an area of antimagic, as in the {@spell antimagic field} spell, in a 150-foot cone. At the start of each of its turns, Multa Luscus can reposition the direction the Beholder is facing. "
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Multa Luscus fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Bethanie's Sacrifice (Mythic Trait; Recharges after a Short or Long Rest).",
+					"entries": [
+						"When the Multa Luscus drops below half of it's maximum hitpoints (300). He releases Bethanie and launches her at a point that he can see within 120 feet, where Bethanie explodes, spreading the light of her antimagic cone across the area.",
+						"A glowing 180-foot-radius sphere of antimagic surrounds the shredded remains of Bethanie, as in the antimagic field spell.",
+						"At the end of each of Multa Luscus' turns, reduce the radius of the sphere by 30 feet as Bethanie's glow lessens."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of Multa Luscus' choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Multa Luscus' Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Multa Luscus can use its Beholder Eye Ray. It then makes three attacks with its flail, if Multa Luscus currently has a creature {@condition grappled}, it may replace two of the attacks with one Crushing Blow. Multa Luscus may only have one creature {@condition grappled} this way at a time."
+					]
+				},
+				{
+					"name": "Flail",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 30 ft., one target. {@h}28 ({@dice 3d12 + 8}) and the target must make a {@dc 20} Strength or Dexterity Saving throw or become {@condition restrained}. Whilst a creature is {@condition restrained} this way Multa Luscus can only attack that target unless he chooses to release it."
+					]
+				},
+				{
+					"name": "Crushing Blow",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 30 ft., one target. {@h}47 ({@damage 10d12 + 8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Beholder Eye Ray",
+					"entries": [
+						"Multa Luscus, shakes the Beholder's restraints, causing it to shoot one of the following Eye Rays at random, choosing one target it can see within 120 feet of it:",
+						"{@i 1. Charm Ray.} The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition charmed} by the beholder for 1 hour, or until the beholder harms the creature.",
+						"{@i 2. Paralyzing Ray.} The targeted creature must succeed on a {@dc 16} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"{@i 3. Fear Ray.} The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"{@i 4. Slowing Ray.} The targeted creature must succeed on a {@dc 16} Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"{@i 5. Enervation Ray.} The targeted creature must make a {@dc 16} Constitution saving throw, taking 36 ({@damage 8d8}) necrotic damage on a failed save, or half as much damage on a successful one.",
+						"{@i 6. Telekinetic Ray.} If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or the beholder moves it up to 30 feet in any direction. It is {@condition restrained} by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is {@condition incapacitated}.",
+						"If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.",
+						"{@i 7. Sleep Ray.} The targeted creature must succeed on a {@dc 16} Wisdom saving throw or fall asleep and remain {@condition unconscious} for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.",
+						"{@i 8. Petrification Ray.} The targeted creature must make a {@dc 16} Dexterity saving throw. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} until freed by the  {@spell greater restoration} spell or other magic.",
+						"{@i 9. Disintegration Ray.} If the target is a creature, it must succeed on a {@dc 16} Dexterity saving throw or take 45 ({@damage 10d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.",
+						"If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
+						"{@i 10. Death Ray.} The targeted creature must succeed on a {@dc 16} Dexterity saving throw or take 55 ({@damage 10d10}) necrotic damage. The target dies if the ray reduces it to 0 hit points."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Inferno Ward (Lair only)",
+					"entries": [
+						"When Multa Luscus is targeted by a ranged attack, it can cause a nearby pool of lava to erupt, forming a wall between it and the creature that fired it, causing the projectile to be engulfed in flames and converts half the damage dealt to fire damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Mace",
+					"entries": [
+						"Multa Luscus makes one mace attack."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Multa Luscus uses its Frightful Presence."
+					]
+				},
+				{
+					"name": "Crush (Costs 3 Actions)",
+					"entries": [
+						"Multa Luscus makes one Crushing Blow attack."
+					]
+				}
+			],
+			"mythicHeader": [
+				"If Multa Lusca's mythic trait is active, he can use the option below, as long as his current HP is lower than half of his maximum HP."
+			],
+			"mythic": [
+				{
+					"name": "Chain Whip",
+					"entries": [
+						"Whenever a creature comes within 15 feet of Multa Luscus for the first time, he slams his chains down around him dealing ({@damage 2d12}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Alternate Multiattack",
+					"entries": [
+						"Multa Luscus makes four attacks with its flail, if Multa Luscus currently has a creature {@condition grappled}, it may replace two of the attacks with a Crushing Blow. Multa Luscus may now have two creatures {@condition grappled} this way."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB%20(3pp)/Adult%20Cave%20Dragon.png",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"restrained",
+				"unconscious"
 			]
 		}
 	]
